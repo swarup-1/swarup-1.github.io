@@ -9,6 +9,7 @@ import {
   Link,
   useDisclosure,
 } from '@chakra-ui/react';
+import Swarup_Kadoli_Resume from "../assets/Swarup_Kadoli_Resume.pdf"
 import {
   HamburgerIcon,
   CloseIcon,
@@ -56,6 +57,8 @@ export default function Navbar() {
           <Flex display={{ base: 'none', md: 'flex' }}>
             <DesktopNav />
           </Flex>
+          <a href={Swarup_Kadoli_Resume} download="Swarup_Kadoli_Resume.pdf">
+            {/* <a href="https://drive.google.com/file/d/1c9e3JeMGi_Lm-e_JjNd3ChNQyBGg7JZE/view?usp=share_link" target="_blank"></a> */}
           <Button
             display={{ base: 'none', md: 'inline-flex' }}
             variant='outline'
@@ -65,6 +68,7 @@ export default function Navbar() {
             }}>
             Resume
           </Button>
+          </a>
         </Stack>
       </Flex>
 
@@ -107,15 +111,17 @@ const MobileNav = () => {
             </Flex>
           </Stack>
       ))}
-      <Button
-        display='flex'
-        variant='outline'
-        colorScheme="#64FFDA"
-        _hover={{
-          bg: 'teal.700',
-        }}>
-        Resume
-      </Button>
+      <a href={Swarup_Kadoli_Resume} download="Swarup_Kadoli_Resume.pdf">
+        <Button
+          display='flex'
+          variant='outline'
+          colorScheme="#64FFDA"
+          _hover={{
+            bg: 'teal.700',
+          }}>
+          Resume
+        </Button>
+      </a>
     </Stack>
   );
 };

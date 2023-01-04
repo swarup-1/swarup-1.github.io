@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   color: #64FFDA;
-  background: rgb(9,40,51);
-  background: linear-gradient(164deg, rgba(9,40,51,1) 27%, rgba(0,19,28,1) 100%);
+  background-color: rgb(14, 0, 20);
+  /* background: rgb(9,40,51);
+  background: linear-gradient(164deg, rgba(9,40,51,1) 27%, rgba(0,19,28,1) 100%); */
 }
