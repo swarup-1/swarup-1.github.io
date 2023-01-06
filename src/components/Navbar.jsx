@@ -83,7 +83,7 @@ const DesktopNav = () => {
 
   return (
     <Stack direction={'row'} spacing={2}>
-              <Link  p={2}>Home</Link>
+              <Link  p={2}>Home--------</Link>
               <Link w="120px" p={2}>About Me</Link>
               <Link w="120px" p={2}>Projects</Link>
               <Link w="120px" p={2}>Contact Me</Link>
