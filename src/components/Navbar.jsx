@@ -44,7 +44,7 @@ export default function Navbar() {
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <Text
             fontFamily={'heading'}>
-            Logo
+            My Logo 
           </Text>
 
         </Flex>
