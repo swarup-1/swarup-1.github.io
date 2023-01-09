@@ -5,10 +5,9 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <Box p="20px">
-      <hr />
-      <Heading border="1px solid red" m="auto" >Get In Touch</Heading>
-      <Text border="1px solid red" m="auto" w={{base:"90%", sm:"70%", md:"50%", lg:"40%" }}>Currently I'm learning Full Stack Web Development from Masai School, My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</Text>
+    <Box p="20px" className="contact">
+      <Heading m="auto" >Get In Touch</Heading>
+      <Text m="auto" w={{base:"90%", sm:"70%", md:"50%", lg:"40%" }}>Currently I'm learning Full Stack Web Development from Masai School, My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</Text>
       <Center p="20px">
         <Card align='center' color='#64FFDA' border="1px solid #64FFDA" w={{base:"90%", sm:"70%", md:"50%", lg:"30%" }}>
           <CardBody w="100%">

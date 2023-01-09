@@ -4,7 +4,9 @@ import React from 'react'
 
 const AboutMe = () => {
   return (
-    <div >
+    <div className="about">
+      <br />
+      <br />
       <Flex flexDirection={{base:"column", md:"row"}} p={{base:"20px 50px", md:"10px 10px"}} justifyContent="space-evenly">
         <Box align="start" width={{base:"100%", md:"30%"}}  >
         <Heading>About Me</Heading>

@@ -6,8 +6,7 @@ import { FaNpm } from 'react-icons/fa'
 const TechStack = () => {
   return (
     <Box p="20px">
-      <hr />
-      <Heading border="1px solid red" m="auto" >Tech Stack & Tools</Heading>
+      <Heading m="auto" >Tech Stack & Tools</Heading>
       <Flex flexDirection="column" justifyContent="space-around">
           
         <SimpleGrid columns={{base:3, sm:5, md:8, lg:10}} m="auto" mb="20px">

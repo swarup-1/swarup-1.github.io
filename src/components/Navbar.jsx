@@ -6,22 +6,23 @@ import {
   Button,
   Stack,
   Collapse,
-  Link,
   useDisclosure,
 } from '@chakra-ui/react';
+import { Link } from 'react-scroll';
 import Swarup_Kadoli_Resume from "../assets/Swarup_Kadoli_Resume.pdf"
 import {
   HamburgerIcon,
   CloseIcon,
 } from '@chakra-ui/icons';
-
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
     <Box>
       <Flex
-        minH={'60px'}
+        boxShadow="black 0px 3px 8px"
+        backgroundColor="#001c29"
+        minH={'70px'}
         py={{ base: 2 }}
         px={{ base: 4 }}
         align={'center'}>
@@ -83,10 +84,9 @@ const DesktopNav = () => {
 
   return (
     <Stack direction={'row'} spacing={2}>
-              <Link  p={2}>Home--------</Link>
-              <Link w="120px" p={2}>About Me</Link>
-              <Link w="120px" p={2}>Projects</Link>
-              <Link w="120px" p={2}>Contact Me</Link>
+      <Link style={{width:"130px"}} to="about" spy={true} smooth={true} offset={50} duration={500}>About Me</Link>
+      <Link style={{width:"130px"}} to="projects" spy={true} smooth={true} offset={50} duration={500}>Projects</Link>
+      <Link style={{width:"130px"}} to="contact" spy={true} smooth={true} offset={50} duration={500}>Contact Me</Link>
     </Stack>
   );
 };
