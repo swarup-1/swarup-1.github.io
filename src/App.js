@@ -7,15 +7,31 @@ import GitHub from "./Pages/GitHub";
 import SmallProjects from "./Pages/SmallProjects";
 import TechStack from "./Pages/TechStack";
 import Contact from "./Pages/Contact";
+import gif from "./assets/gif.gif";
+import { useEffect, useState } from "react";
+import { Box, Image } from "@chakra-ui/react";
 
 function App() {
-  return (
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
+  return loading ? (
+    <Box height="100vh"  backgroundColor={{base:"black",md:"none"}} paddingTop={{base:"60%",md:"0px"}} >
+      <Image src={gif} w="100%" />
+    </Box>
+  )
+  :
+  (
     <div className="App">
       <Navbar />
       <Front />
       <AboutMe />
       <Projects />
-      <SmallProjects />
+      {/* <SmallProjects /> */}
       <GitHub />
       <TechStack />
       <Contact />

@@ -7,18 +7,25 @@ import {
   Stack,
   Collapse,
   useDisclosure,
+  Image,
 } from '@chakra-ui/react';
 import { Link } from 'react-scroll';
+import portfolio_logo from "../assets/portfolio_logo.png";
 import Swarup_Kadoli_Resume from "../assets/Swarup_Kadoli_Resume.pdf"
-import {
-  HamburgerIcon,
-  CloseIcon,
-} from '@chakra-ui/icons';
+import { ImFolderDownload } from "react-icons/im";
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import { useEffect, useState } from 'react';
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
-
+  const [sticky, setSticky] = useState(false)
+  useEffect(()=>{
+    const handleScroll=()=>{
+      setSticky(window.scrollY>10)
+    }
+    window.addEventListener("scroll",handleScroll)
+  })
   return (
-    <Box>
+    <Box position="sticky" top="0" zIndex="2" >
       <Flex
         boxShadow="black 0px 3px 8px"
         backgroundColor="#001c29"
@@ -43,10 +50,10 @@ export default function Navbar() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Text
-            fontFamily={'heading'}>
-            My Logo 
-          </Text>
+          <Image 
+            boxSize='50px'
+            objectFit='cover'
+            src={portfolio_logo} />
 
         </Flex>
 
@@ -67,7 +74,7 @@ export default function Navbar() {
             _hover={{
               bg: 'teal.700',
             }}>
-            Resume
+            Resume <Text ml="10px" ><ImFolderDownload /></Text>
           </Button>
           </a>
         </Stack>
@@ -84,9 +91,11 @@ const DesktopNav = () => {
 
   return (
     <Stack direction={'row'} spacing={2}>
-      <Link style={{width:"130px"}} to="about" spy={true} smooth={true} offset={50} duration={500}>About Me</Link>
-      <Link style={{width:"130px"}} to="projects" spy={true} smooth={true} offset={50} duration={500}>Projects</Link>
-      <Link style={{width:"130px"}} to="contact" spy={true} smooth={true} offset={50} duration={500}>Contact Me</Link>
+      <Link style={{width:"120px"}} to="home" spy={true} smooth={true} offset={-120} duration={500}>Home</Link>
+      <Link style={{width:"120px"}} to="about" spy={true} smooth={true} offset={-40} duration={500}>About Me</Link>
+      <Link style={{width:"120px"}} to="projects" spy={true} smooth={true} offset={-40} duration={500}>Projects</Link>
+      <Link style={{width:"120px"}} to="skills" spy={true} smooth={true} offset={-40} duration={500}>Skills</Link>
+      <Link style={{width:"120px"}} to="contact" spy={true} smooth={true} offset={-40} duration={500}>Contact Me</Link>
     </Stack>
   );
 };
@@ -95,27 +104,27 @@ const MobileNav = () => {
   return (
     <Stack
       p={4}
-      border="1px solid red"
-      w="30%"
+      w={{base:"40%",sm:"30%"}}
+      marginBottom="20px"
+      borderBottom="1px solid #64FFDA"
+      borderRight="1px solid #64FFDA"
+      borderTop="1px solid #000f1670"
+      backgroundColor="#001c29"
+      fontSize={{base:"12px",sm:"15px", md:"17px"}}
       display={{ md: 'none' }}>
-      {NAV_ITEMS.map((navItem) => (
-          <Stack key={navItem}>
-            <Flex
-              py={2}
-              justify={'space-between'}
-              align={'center'}>
-              <Text
-                fontWeight={700}>
-                {navItem}
-              </Text>
-            </Flex>
-          </Stack>
-      ))}
+          <Flex flexDirection="column" textAlign="start" >
+            <Link style={{margin:"10px 0px"}} to="home" spy={true} smooth={true} offset={-70} duration={500}>Home</Link>
+            <Link style={{margin:"10px 0px"}} to="about" spy={true} smooth={true} offset={-20} duration={500}>About Me</Link>
+            <Link style={{margin:"10px 0px"}} to="projects" spy={true} smooth={true} offset={-70} duration={500}>Projects</Link>
+            <Link style={{margin:"10px 0px"}} to="skills" spy={true} smooth={true} offset={-70} duration={500}>Skills</Link>
+            <Link style={{marginBottom:"20px"}} to="contact" spy={true} smooth={true} offset={-40} duration={500}>Contact Me</Link>
+          </Flex>
       <a href={Swarup_Kadoli_Resume} download="Swarup_Kadoli_Resume.pdf">
         <Button
           display='flex'
           variant='outline'
           colorScheme="#64FFDA"
+          fontSize={{base:"12px",sm:"15px", md:"17px"}}
           _hover={{
             bg: 'teal.700',
           }}>
@@ -125,5 +134,3 @@ const MobileNav = () => {
     </Stack>
   );
 };
-
-const NAV_ITEMS = [ "Home","About Me","Projects","Contact Me",];
