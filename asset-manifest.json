@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b22b5a3c.css",
-    "main.js": "/static/js/main.44e8ede5.js",
+    "main.css": "/static/css/main.8890cca8.css",
+    "main.js": "/static/js/main.2c6b2256.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/acras.png": "/static/media/acras.3abf177a2de0f07a7653.png",
     "static/media/kindmeal.png": "/static/media/kindmeal.8fd34a9c5ba31aa06e59.png",
@@ -9,12 +9,12 @@
     "static/media/Myphoto2.jpeg": "/static/media/Myphoto2.2ed515e80b3e086439bb.jpeg",
     "static/media/Swarup_Kadoli_Resume.pdf": "/static/media/Swarup_Kadoli_Resume.96c5d05eb9ce27242315.pdf",
     "index.html": "/index.html",
-    "main.b22b5a3c.css.map": "/static/css/main.b22b5a3c.css.map",
-    "main.44e8ede5.js.map": "/static/js/main.44e8ede5.js.map",
+    "main.8890cca8.css.map": "/static/css/main.8890cca8.css.map",
+    "main.2c6b2256.js.map": "/static/js/main.2c6b2256.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b22b5a3c.css",
-    "static/js/main.44e8ede5.js"
+    "static/css/main.8890cca8.css",
+    "static/js/main.2c6b2256.js"
   ]
 }
