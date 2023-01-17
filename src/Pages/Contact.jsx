@@ -35,8 +35,8 @@ const Contact = () => {
             <input type="text" value="To : swarupkadoli9@gmail.com" style={{backgroundColor:"#000F16", marginBottom:"10px", color:'#fff', borderBottom:"1px solid #64FFDA", width:"100%"}}/>
             <input type="text" name="user_name" onChange={(e)=>setName(e.target.value)} value={name} style={{backgroundColor:"#000F16", marginBottom:"10px", color:'#fff', borderBottom:"1px solid #64FFDA", width:"100%"}} placeholder='Your Name' />
             <input type="email" name="user_email" onChange={(e)=>setEmail(e.target.value)} value={email} style={{backgroundColor:"#000F16", marginBottom:"10px", color:'#fff', borderBottom:"1px solid #64FFDA", width:"100%"}} placeholder='Your Email' />
-            <textarea name="message" onChange={(e)=>setMessage(e.target.value)} value={message} style={{backgroundColor:"#000F16", marginBottom:"10px", borderBottom:"1px solid #64FFDA", width:"100%"}} placeholder='Message' rows="6" cols="45" autoComplete="off" />
-            <Button type="submit" value="Send" variant='outline' colorScheme="#64FFDA" _hover={{  bg: 'teal.700'}}> Submit </Button>
+            <textarea name="message" onChange={(e)=>setMessage(e.target.value)} value={message} style={{backgroundColor:"#000F16", marginBottom:"10px",color:'#fff', borderBottom:"1px solid #64FFDA", width:"100%"}} placeholder='Message' rows="6" cols="45" autoComplete="off" />
+            <Button type="submit" value="Send" variant='outline' color="#64FFDA" _hover={{  bg: 'teal.700'}}> Submit </Button>
           </form>
           <CardFooter>
           </CardFooter>
