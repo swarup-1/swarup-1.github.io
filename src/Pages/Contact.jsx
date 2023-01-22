@@ -28,6 +28,10 @@ const Contact = () => {
   return (
     <Box p={{base:"5px 0px", md:"50px 0px"}} paddingBottom="20%" className="contact">
       <Heading m="auto"  pb={{base:"20px", md:"50px"}} >Get In Touch</Heading>
+        <Flex textAlign="center" flexDirection={{base:"column",md:"row"}} justifyContent="space-around" w={{base:"90%", sm:"70%" }} m="auto" >
+            <Button color="#c9fff3" variant='outline' w="100%" borderColor="gray">Mobile No : 8149606193</Button>
+            <Button color="#c9fff3" variant='outline' w="100%" borderColor="gray">Email ID : swarupkadoli9@gmail.com</Button>
+        </Flex>
       <Text m="auto" w={{base:"90%", sm:"70%", md:"50%", lg:"40%" }} color="#64ffdb9a" >Currently I'm learning Full Stack Web Development from Masai School, My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</Text>
       <Center p="30px" mt="50px">
         <Card align='center' border="1px solid #64FFDA" w={{base:"90%", sm:"70%", md:"50%", lg:"30%" }}>
@@ -42,7 +46,7 @@ const Contact = () => {
           </CardFooter>
         </Card>
       </Center>
-        <Flex textAlign="center" justifyContent="space-around" w={{base:"80%", sm:"50", md:"30%" }} m="auto" templateColumns='repeat(auto-fill, minmax(30%, 1fr))'>
+        <Flex textAlign="center" justifyContent="space-around" w={{base:"80%", sm:"50%", md:"30%" }} m="auto" templateColumns='repeat(auto-fill, minmax(30%, 1fr))'>
           <a href="https://github.com/swarup-1" target="_blank" style={{width:"30%"}} >
             <IconButton variant='outline' w="100%" _hover={{ bg: 'teal.700', }} borderColor="" color='#64FFDA' aria-label='Send email' icon={ <SiGithub />  }/>          
           </a>

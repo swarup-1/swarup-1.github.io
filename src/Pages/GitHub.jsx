@@ -1,14 +1,13 @@
 import GitHubCalendar from 'react-github-calendar';
 import React from 'react'
 import { Box, Heading, Text } from '@chakra-ui/react';
-
 const GitHub = () => {
   return (
     <Box p={{base:"5px 0px", md:"50px 0px"}}>
         <Heading pb={{base:"20px", md:"50px"}}>Github</Heading>
         <p align="center">
           <Box padding={{base:"0px", md:"30px"}} border={{base:"none", md:"1px solid #64FFDA"}} width={{base:"90%", md:"70%"}} marginBottom="15px" >
-          <GitHubCalendar username="swarup-1" />
+          <GitHubCalendar username="swarup-1" theme={{level0 : "#b4ffb7",level1 : "#39ff43c7",level2 : "#68e700c7",level3 : "#007e06",level4 : "#004e04c7"}} />
           </Box>
           <Box padding={{base:"0px", md:"30px"}} border="1px solid #64FFDA" width="70%" marginBottom="15px" >
             <Text style={{base:"10px", md:"20px"}} >swarup-1's streak</Text>

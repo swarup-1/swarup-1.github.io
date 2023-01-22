@@ -16,7 +16,7 @@ const Front = () => {
       <br />
       
         {/* <a href={Swarup_Kadoli_Resume} download="Swarup_Kadoli_Resume.pdf"> */}
-            <a href="https://drive.google.com/file/d/1c9e3JeMGi_Lm-e_JjNd3ChNQyBGg7JZE/view?usp=share_link" rel="noreferrer" target="_blank">
+            <a href="https://drive.google.com/file/d/1c9e3JeMGi_Lm-e_JjNd3ChNQyBGg7JZE/view?usp=share_link" download="Swarup_Kadoli_Resume.pdf" rel="noreferrer" target="_blank">
           <Button
             display={{ base: 'none', md: 'inline-flex' }}
             variant='outline'
