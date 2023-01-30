@@ -3,6 +3,9 @@ import Swarup_Kadoli_Resume from "../assets/Swarup_Kadoli_Resume.pdf"
 import React from 'react'
 
 const Front = () => {
+  const handleclick=()=>{
+      window.open('https://drive.google.com/file/d/1c9e3JeMGi_Lm-e_JjNd3ChNQyBGg7JZE/view?usp=share_link','_blank')
+  }
   return (
     <Box margin="50px 0px 70px 0px" className='home' >
       <Flex justifyContent="space-around" p={{base:"5px 50px", md:"5px 100px", lg:"10px 60px"}}>
@@ -15,8 +18,7 @@ const Front = () => {
       <Text fontSize={{base:"15px",sm:"20px"}} >I’m currently learning full-stack web development with a specialization in MERN stack<br /> from Masai School.</Text>
       <br />
       
-        {/* <a href={Swarup_Kadoli_Resume} download="Swarup_Kadoli_Resume.pdf"> */}
-            <a href="https://drive.google.com/file/d/1c9e3JeMGi_Lm-e_JjNd3ChNQyBGg7JZE/view?usp=share_link" download="Swarup_Kadoli_Resume.pdf" rel="noreferrer" target="_blank">
+            <a href={Swarup_Kadoli_Resume} download="Swarup_Kadoli_Resume.pdf" onClick={handleclick} rel="noreferrer">
           <Button
             display={{ base: 'none', md: 'inline-flex' }}
             variant='outline'
@@ -25,12 +27,11 @@ const Front = () => {
             _hover={{
               bg: 'teal.700',
             }}>
-            Take a Look on my Resume
+            Take a look on my Resume 
           </Button>
             </a>
-            {/* </a> */}
         {/* If page is small then show this download Button */}
-        <a href={Swarup_Kadoli_Resume} download="Swarup_Kadoli_Resume.pdf">
+        <a href={Swarup_Kadoli_Resume} onClick={handleclick} download="Swarup_Kadoli_Resume.pdf" rel="noreferrer">
         <Button
             display={{ base: 'flex', md: 'none' }}
             variant='outline'

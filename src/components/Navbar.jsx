@@ -12,7 +12,7 @@ import {
 import { Link } from 'react-scroll';
 import portfolio_logo from "../assets/portfolio_logo.png";
 import Swarup_Kadoli_Resume from "../assets/Swarup_Kadoli_Resume.pdf"
-import { ImFolderDownload } from "react-icons/im";
+import { ImProfile } from "react-icons/im";
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { useEffect, useState } from 'react';
 export default function Navbar() {
@@ -24,8 +24,12 @@ export default function Navbar() {
     }
     window.addEventListener("scroll",handleScroll)
   })
+  const handleclick=()=>{
+    window.open('https://drive.google.com/file/d/1c9e3JeMGi_Lm-e_JjNd3ChNQyBGg7JZE/view?usp=share_link','_blank')
+  }
+  
   return (
-    <Box position="sticky" top="0" zIndex="2" >
+    <Box position="sticky" top="0" zIndex="2" color="#4ffad2f0" >
       <Flex
         boxShadow="black 0px 3px 8px"
         backgroundColor="#001c29"
@@ -65,7 +69,7 @@ export default function Navbar() {
           <Flex display={{ base: 'none', md: 'flex' }}>
             <DesktopNav />
           </Flex>
-          <a href={Swarup_Kadoli_Resume} download="Swarup_Kadoli_Resume.pdf">
+          <a href={Swarup_Kadoli_Resume} download="Swarup_Kadoli_Resume.pdf" onClick={handleclick} rel="noreferrer">
           <Button
             display={{ base: 'none', md: 'inline-flex' }}
             variant='outline'
@@ -73,7 +77,7 @@ export default function Navbar() {
             _hover={{
               bg: 'teal.700',
             }}>
-            Resume <Text ml="10px" ><ImFolderDownload /></Text>
+            Resume <Text ml="10px" fontWeight="300" ><ImProfile /></Text>
           </Button>
           </a>
         </Stack>
@@ -89,17 +93,20 @@ export default function Navbar() {
 const DesktopNav = () => {
 
   return (
-    <Stack direction={'row'} spacing={2}>
+    <Box display="flex" alignItems="center" >
       <Link style={{width:"120px"}} to="home" spy={true} smooth={true} offset={-120} duration={500}>Home</Link>
       <Link style={{width:"120px"}} to="about" spy={true} smooth={true} offset={-40} duration={500}>About Me</Link>
       <Link style={{width:"120px"}} to="projects" spy={true} smooth={true} offset={-40} duration={500}>Projects</Link>
       <Link style={{width:"120px"}} to="skills" spy={true} smooth={true} offset={-40} duration={500}>Skills</Link>
       <Link style={{width:"120px"}} to="contact" spy={true} smooth={true} offset={-40} duration={500}>Contact Me</Link>
-    </Stack>
+    </Box>
   );
 };
 
 const MobileNav = () => {
+  const handleclick=()=>{
+    window.open('https://drive.google.com/file/d/1c9e3JeMGi_Lm-e_JjNd3ChNQyBGg7JZE/view?usp=share_link','_blank')
+  }
   return (
     <Stack
       p={4}
@@ -118,7 +125,7 @@ const MobileNav = () => {
             <Link style={{margin:"10px 0px"}} to="skills" spy={true} smooth={true} offset={-70} duration={500}>Skills</Link>
             <Link style={{marginBottom:"20px"}} to="contact" spy={true} smooth={true} offset={-40} duration={500}>Contact Me</Link>
           </Flex>
-      <a href={Swarup_Kadoli_Resume} download="Swarup_Kadoli_Resume.pdf">
+          <a href={Swarup_Kadoli_Resume} download="Swarup_Kadoli_Resume.pdf" onClick={handleclick} rel="noreferrer">
         <Button
           display='flex'
           variant='outline'
@@ -127,7 +134,7 @@ const MobileNav = () => {
           _hover={{
             bg: 'teal.700',
           }}>
-          Resume
+          Resume <Text ml="10px" fontWeight="300" ><ImProfile /></Text>
         </Button>
       </a>
     </Stack>

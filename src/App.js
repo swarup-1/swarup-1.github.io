@@ -8,6 +8,7 @@ import SmallProjects from "./Pages/SmallProjects";
 import TechStack from "./Pages/TechStack";
 import Contact from "./Pages/Contact";
 import gif from "./assets/gif.gif";
+import gif2 from "./assets/gif2.gif";
 import { useEffect, useState } from "react";
 import { Box, Image } from "@chakra-ui/react";
 
@@ -16,11 +17,11 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false)
-    }, 3000);
+    }, 2800);
     return () => clearTimeout(timer);
   }, []);
   return loading ? (
-    <Box height="100vh"  backgroundColor={{base:"black",md:"none"}} paddingTop={{base:"60%",md:"0px"}} >
+    <Box height="100vh"  backgroundColor={{base:"black",md:"none"}} paddingTop={{base:"60%",sm:"30%",md:"10px"}} >
       <Image src={gif} w="100%" />
     </Box>
   )
