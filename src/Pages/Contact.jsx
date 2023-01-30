@@ -29,8 +29,8 @@ const Contact = () => {
     <Box p={{base:"5px 0px", md:"50px 0px"}} paddingBottom="20%" className="contact">
       <Heading m="auto"  pb={{base:"20px", md:"50px"}} >Get In Touch</Heading>
         <Flex textAlign="center" flexDirection={{base:"column",md:"row"}} justifyContent="space-around" w={{base:"90%", sm:"70%" }} m="auto" >
-            <Button color="#c9fff3" variant='outline' w="100%" borderColor="gray">Mobile No : 8149606193</Button>
-            <Button color="#c9fff3" variant='outline' w="100%" borderColor="gray">Email ID : swarupkadoli9@gmail.com</Button>
+            <Button color="#c9fff3" variant='outline' w="100%" borderColor="gray" _hover={{bg: 'teal.900'}}>Mobile No : 8149606193</Button>
+            <Button color="#c9fff3" variant='outline' w="100%" borderColor="gray" _hover={{bg: 'teal.900'}}>Email ID : swarupkadoli9@gmail.com</Button>
         </Flex>
       <Text m="auto" w={{base:"90%", sm:"70%", md:"50%", lg:"40%" }} color="#64ffdb9a" >Currently I'm learning Full Stack Web Development from Masai School, My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</Text>
       <Center p="30px" mt="50px">
