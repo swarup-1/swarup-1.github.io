@@ -9,6 +9,7 @@ import {
   useDisclosure,
   Image,
 } from '@chakra-ui/react';
+import '../App.css';
 import { Link } from 'react-scroll';
 import portfolio_logo from "../assets/portfolio_logo.png";
 import Swarup_Kadoli_Resume from "../assets/Swarup_Kadoli_Resume.pdf"
@@ -54,11 +55,12 @@ export default function Navbar() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Image 
-            boxSize='50px'
-            objectFit='cover'
-            src={portfolio_logo} />
-
+          <Link style={{cursor:"pointer" }} to="home" spy={true} smooth={true} offset={-120} duration={500}>
+            <Image 
+              boxSize='50px'
+              objectFit='cover'
+              src={portfolio_logo} />
+          </Link>
         </Flex>
 
         <Stack
@@ -94,11 +96,11 @@ const DesktopNav = () => {
 
   return (
     <Box display="flex" alignItems="center" >
-      <Link style={{width:"120px"}} to="home" spy={true} smooth={true} offset={-120} duration={500}>Home</Link>
-      <Link style={{width:"120px"}} to="about" spy={true} smooth={true} offset={-40} duration={500}>About Me</Link>
-      <Link style={{width:"120px"}} to="projects" spy={true} smooth={true} offset={-40} duration={500}>Projects</Link>
-      <Link style={{width:"120px"}} to="skills" spy={true} smooth={true} offset={-40} duration={500}>Skills</Link>
-      <Link style={{width:"120px"}} to="contact" spy={true} smooth={true} offset={-40} duration={500}>Contact Me</Link>
+      <Link style={{width:"120px",cursor:"pointer" }} className="navhome" to="home" spy={true} smooth={true} offset={-120} duration={500}>Home</Link>
+      <Link style={{width:"120px",cursor:"pointer" }} className="navabout" to="about" spy={true} smooth={true} offset={-40} duration={500}>About Me</Link>
+      <Link style={{width:"120px",cursor:"pointer" }} className="navprojects" to="projects" spy={true} smooth={true} offset={-40} duration={500}>Projects</Link>
+      <Link style={{width:"120px",cursor:"pointer" }} className="navskills" to="skills" spy={true} smooth={true} offset={-40} duration={500}>Skills</Link>
+      <Link style={{width:"120px",cursor:"pointer" }} className="navcontact" to="contact" spy={true} smooth={true} offset={-40} duration={500}>Contact Me</Link>
     </Box>
   );
 };
@@ -119,11 +121,11 @@ const MobileNav = () => {
       fontSize={{base:"12px",sm:"15px", md:"17px"}}
       display={{ md: 'none' }}>
           <Flex flexDirection="column" textAlign="start" >
-            <Link style={{margin:"10px 0px"}} to="home" spy={true} smooth={true} offset={-70} duration={500}>Home</Link>
-            <Link style={{margin:"10px 0px"}} to="about" spy={true} smooth={true} offset={-20} duration={500}>About Me</Link>
-            <Link style={{margin:"10px 0px"}} to="projects" spy={true} smooth={true} offset={-70} duration={500}>Projects</Link>
-            <Link style={{margin:"10px 0px"}} to="skills" spy={true} smooth={true} offset={-70} duration={500}>Skills</Link>
-            <Link style={{marginBottom:"20px"}} to="contact" spy={true} smooth={true} offset={-40} duration={500}>Contact Me</Link>
+            <Link style={{margin:"10px 0px", cursor:"pointer" }} to="home" spy={true} smooth={true} offset={-70} duration={500}>Home</Link>
+            <Link style={{margin:"10px 0px", cursor:"pointer" }} to="about" spy={true} smooth={true} offset={-20} duration={500}>About Me</Link>
+            <Link style={{margin:"10px 0px", cursor:"pointer" }} to="projects" spy={true} smooth={true} offset={-70} duration={500}>Projects</Link>
+            <Link style={{margin:"10px 0px", cursor:"pointer" }} to="skills" spy={true} smooth={true} offset={-70} duration={500}>Skills</Link>
+            <Link style={{marginBottom:"20px", cursor:"pointer" }} to="contact" spy={true} smooth={true} offset={-40} duration={500}>Contact Me</Link>
           </Flex>
           <a href={Swarup_Kadoli_Resume} download="Swarup_Kadoli_Resume.pdf" onClick={handleclick} rel="noreferrer">
         <Button

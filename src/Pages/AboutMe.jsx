@@ -18,7 +18,7 @@ const AboutMe = () => {
             </Text>
             <br /> 
             <Text fontSize={{base:"13px",sm:"17px", md:"20px"}}>Here are a few technologies I've been working with recently</Text>
-            <Flex justifyContent={{base:"space-evenly", md:"space-between"}} p={{base:"5px", md:"20px"}} >
+            <Box display={{base:"none", lg:"flex"}} justifyContent={{base:"space-evenly", md:"space-between"}} p={{base:"5px", md:"20px"}} >
 
             <ul style={{listStyleType:"square"}}>
               <li>HTML</li>
@@ -27,13 +27,8 @@ const AboutMe = () => {
               <li>Redux</li>
               <li>Express</li>
               <li>Nextjs</li>
-              {/* <li>Mongoose</li> */}
+              <li>Mongoose</li>
             </ul>
-
-
-
-
-
             <ul style={{listStyleType:"square"}}>
               <li>CSS</li>
               <li>Chakra-UI</li>
@@ -41,10 +36,10 @@ const AboutMe = () => {
               <li>MongoDB</li>
               <li>TypeScript</li>
               <li>Storybook</li>
-              {/* <li>Styled Components</li> */}
-              {/* <li>Firebase</li> */}
+              <li>Styled Components</li>
+              <li>Firebase</li>
             </ul>
-            </Flex>
+            </Box>
         </Box>
         <Box align="start" width={{base:"100%", md:"30%"}}  >
         <Image src={myPhoto2} alt="Profile Image" m="auto" marginTop="20px" w={{base:"50%", sm:"60", md:"80%"}} />
