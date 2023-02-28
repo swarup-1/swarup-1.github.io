@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false)
-    }, 2800);
+    }, 2700);
     return () => clearTimeout(timer);
   }, []);
   return loading ? (
@@ -31,10 +31,10 @@ function App() {
       <Navbar />
       <Front />
       <AboutMe />
+      <TechStack />
       <Projects />
       {/* <SmallProjects /> */}
       <GitHub />
-      <TechStack />
       <Contact />
     </div>
   );

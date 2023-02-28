@@ -17,7 +17,7 @@ const Projects = () => {
       <Box width={{base:"100%",sm:"90%",lg:"70%"}} m="auto" >
 
 {/* ----------------------------------------ASOS Project--------------------------------------------------------------------------------- */}
-        <Box position= "relative" width= {{base:"100%",md:"70%"}} height= {{base:"250px",md:"300px"}} mb={{base:"350px", md:"12%"}}  >
+        <Box position= "relative" width= {{base:"100%",md:"70%"}} height= {{base:"250px",md:"300px"}} mb={{base:"370px", md:"12%"}}  >
           <Image src={asos}  w="100%" height="100%" borderRadius="10px" boxShadow="black 0px 5px 15px"/>
 
           <Box 
