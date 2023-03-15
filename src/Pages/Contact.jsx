@@ -2,6 +2,7 @@ import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 import 'tippy.js/themes/light.css'
 import { SiGithub, SiGmail, SiLinkedin,  } from "react-icons/si";
+import { FaCopy } from "react-icons/fa";
 import { Box, Button, Card, useToast , CardFooter, Center, Flex, Heading, IconButton, Input, Text } from '@chakra-ui/react'
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
@@ -38,15 +39,36 @@ const Contact = () => {
     <Box p={{base:"5px 0px", md:"50px 0px"}} paddingBottom="20%" className="contact">
       <Heading m="auto"  pb={{base:"20px", md:"50px"}} >Get In Touch</Heading>
         <Flex textAlign="center" flexDirection={{base:"column",md:"row"}} justifyContent="space-around" w={{base:"90%", sm:"70%" }} m="auto" >
-            <Button color="#c9fff3" variant='outline' w="100%" borderColor="gray" _hover={{bg: 'teal.900'}}>Mobile No : 8149606193</Button>
-            <Button color="#c9fff3" variant='outline' w="100%" borderColor="gray" _hover={{bg: 'teal.900'}}>Email ID : swarupkadoli9@gmail.com</Button>
+            <Button onClick={()=>{
+              navigator.clipboard.writeText("8149606193")
+              toast({
+                position: 'bottom-left',
+                render: () => (
+                  <Button color="#c9fff3" variant='outline' w="100%" borderColor="gray" backdropBlur={true}>
+                      Mobile Number copied to clipboard
+                  </Button>
+                  ),
+                })
+              }} color="#c9fff3" variant='outline' w="100%" borderColor="gray" _hover={{bg: 'teal.900'}} ><Box mr="5%" >Mobile No : 8149606193</Box><FaCopy /></Button>
+              
+            <Button onClick={()=>{
+              navigator.clipboard.writeText("swarupkadoli9@gmail.com")
+              toast({
+                  position: 'bottom-left',
+                  render: () => (
+                  <Button color="#c9fff3" variant='outline' w="100%" borderColor="gray" backdropBlur={true}>
+                      Email copied to clipboard
+                  </Button>
+                  ),
+              })
+          }} color="#c9fff3" variant='outline' w="100%" borderColor="gray" _hover={{bg: 'teal.900'}} ><Box mr="5%" >Email ID : swarupkadoli9@gmail.com</Box><FaCopy /></Button>
         </Flex>
       <Text m="auto" w={{base:"90%", sm:"70%", md:"50%", lg:"40%" }} color="#64ffdb9a" >Currently I'm learning Full Stack Web Development from Masai School, My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</Text>
       <Center p="30px" mt="50px">
         <Card align='center' border="1px solid #64FFDA" w={{base:"90%", sm:"70%", md:"50%", lg:"30%" }}>
           <form 
           ref={form} 
-          onSubmit={sendEmail} 
+          onSubmit={sendEmail}
           
           style={{width:"100%", padding:"15px"}}>
             <input type="text" value="To : swarupkadoli9@gmail.com" style={{backgroundColor:"#000F16", marginBottom:"10px", color:'#fff', borderBottom:"1px solid #64FFDA", width:"100%"}}/>
