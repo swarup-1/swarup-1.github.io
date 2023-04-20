@@ -13,7 +13,7 @@ const AboutMe = () => {
         <br />
         <Text color="#64ffdb9a" fontSize={{base:"13px",sm:"18px", md:"23px"}}> Hello! I'm Swarup Kadoli,
             <br />
-            A quick learner and an aspiring full-stack web developer with core knowledge of MERN stack technology. Looking forward to applying and enhancing my skills and knowledge as a developer.
+            A quick learner and a Full-stack web developer with core knowledge of MERN stack technologies. Looking forward to applying and enhancing my skills and knowledge as a developer.
             <br /> 
             </Text>
         </Box>

@@ -15,7 +15,7 @@ const Front = () => {
       <br />
       <Heading fontSize={{base:"30px",sm:"40px", md:"50px"}} fontWeight="700"  color="#64ffdb9a">I love building<br /> and learning new things.</Heading>
       <br /><br />
-      <Text fontSize={{base:"15px",sm:"20px"}} >I’m currently learning full-stack web development with a specialization in MERN stack<br /> from Masai School.</Text>
+      <Text fontSize={{base:"15px",sm:"20px"}} >Currently I am available at Masai School as a Full Web Stack developer trainee & having Hands-on knowledge in MERN Stack</Text>
       <br />
       
             <a href={Swarup_Kadoli_Resume} download="Swarup_Kadoli_Resume.pdf" onClick={handleclick} rel="noreferrer">
