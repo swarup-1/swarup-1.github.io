@@ -7,9 +7,8 @@ import GitHub from "./Pages/GitHub";
 import TechStack from "./Pages/TechStack";
 import Contact from "./Pages/Contact";
 import gif from "./assets/gif.gif";
-import { Box, Image } from "@chakra-ui/react";
-
 import { useEffect, useState } from "react";
+import { Box, Image } from "@chakra-ui/react";
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -32,6 +31,7 @@ function App() {
       <AboutMe />
       <TechStack />
       <Projects />
+      {/* <SmallProjects /> */}
       <GitHub />
       <Contact />
     </div>

@@ -1,6 +1,3 @@
-import Tippy from '@tippyjs/react'
-import 'tippy.js/dist/tippy.css'
-import 'tippy.js/themes/light.css'
 import { SiGithub, SiGmail, SiLinkedin,  } from "react-icons/si";
 import { FaCopy } from "react-icons/fa";
 import { Box, Button, Card, useToast , CardFooter, Center, Flex, Heading, IconButton, Input, Text } from '@chakra-ui/react'
