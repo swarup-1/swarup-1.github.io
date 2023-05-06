@@ -10,6 +10,7 @@ import gif from "./assets/gif.gif";
 import { Box, Image } from "@chakra-ui/react";
 
 import {Helmet} from "react-helmet";
+import { useEffect, useState } from "react";
 
 function App() {
   const [loading, setLoading] = useState(true)
