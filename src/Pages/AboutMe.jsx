@@ -9,11 +9,13 @@ const AboutMe = () => {
       <br />
       <Flex flexDirection={{base:"column", md:"row"}} p={{base:"20px 50px", md:"10px 10px"}} justifyContent="space-evenly">
         <Box align="start" width={{base:"100%", md:"30%"}}  >
-        <Heading pb={{base:"20px", md:"50px"}} >About Me</Heading>
+        <Heading pb={{base:"16px", md:"20px"}} >About Me</Heading>
         <br />
-        <Text color="#64ffdb9a" fontSize={{base:"13px",sm:"18px", md:"23px"}}> Hello! I'm Swarup Kadoli,
+        <Text color="#64ffdb9a" fontSize={{base:"12px",sm:"16px", md:"20px"}}> Hello! I'm Swarup Kadoli,
             <br />
-            A quick learner and a Full-stack web developer with core knowledge of MERN stack technologies. Looking forward to applying and enhancing my skills and knowledge as a developer.
+            Experienced Full Stack Web Developer specializing in the MERN stack, adept in React, Redux, and TypeScript. Skilled in
+crafting AI-powered personalization dashboards for Shopify stores. Proficient in HTML and CSS, with a strong problemsolving mindset and a collaborative approach. Quick to adapt to new technologies, making me a valuable asset in
+dynamic web development environments.
             <br /> 
             </Text>
         </Box>
