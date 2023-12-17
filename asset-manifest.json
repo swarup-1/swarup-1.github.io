@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.1f317896.css",
-    "main.js": "/static/js/main.3d612f0b.js",
+    "main.js": "/static/js/main.b5f081c2.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/acras.png": "/static/media/acras.3abf177a2de0f07a7653.png",
     "static/media/kindmeal.png": "/static/media/kindmeal.8fd34a9c5ba31aa06e59.png",
     "static/media/trademart.png": "/static/media/trademart.0d60621d7a7f99d3519a.png",
     "static/media/asos2.png": "/static/media/asos2.74270a8611ac86dfce23.png",
     "static/media/cricbuzz.png": "/static/media/cricbuzz.31632562ecbca24cfb9b.png",
-    "static/media/Swarup_Kadoli_Resume.pdf": "/static/media/Swarup_Kadoli_Resume.78fb370a433413b89626.pdf",
+    "static/media/Swarup_Kadoli_Resume.pdf": "/static/media/Swarup_Kadoli_Resume.8a1e4338b5158d83a68a.pdf",
     "static/media/Myphoto2.jpeg": "/static/media/Myphoto2.2ed515e80b3e086439bb.jpeg",
     "static/media/gif.gif": "/static/media/gif.dcb59a6d805e3e5c8658.gif",
     "static/media/portfolio_logo.png": "/static/media/portfolio_logo.83bbf70ed965139b44e7.png",
     "static/media/theme.png": "/static/media/theme.f903df0011fb21436de3.png",
     "index.html": "/index.html",
     "main.1f317896.css.map": "/static/css/main.1f317896.css.map",
-    "main.3d612f0b.js.map": "/static/js/main.3d612f0b.js.map",
+    "main.b5f081c2.js.map": "/static/js/main.b5f081c2.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f317896.css",
-    "static/js/main.3d612f0b.js"
+    "static/js/main.b5f081c2.js"
   ]
 }
