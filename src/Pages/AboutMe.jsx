@@ -15,7 +15,7 @@ const AboutMe = () => {
             <br />
             Experienced Full Stack Web Developer specializing in the MERN stack, adept in React, Redux, and TypeScript. Skilled in
 crafting AI-powered personalization dashboards for Shopify stores. Proficient in HTML and CSS, with a strong problemsolving mindset and a collaborative approach. Quick to adapt to new technologies, making me a valuable asset in
-dynamic web development environments.
+dynamic web development environments. 
             <br /> 
             </Text>
         </Box>
