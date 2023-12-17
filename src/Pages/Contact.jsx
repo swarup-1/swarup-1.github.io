@@ -1,6 +1,6 @@
 import { SiGithub, SiGmail, SiLinkedin,  } from "react-icons/si";
 import { FaCopy } from "react-icons/fa";
-import { Box, Button, Card, useToast , CardFooter, Center, Flex, Heading, IconButton, Input, Text } from '@chakra-ui/react'
+import { Box, Button, Card, useToast , CardFooter, Center, Flex, Heading, IconButton, Text } from '@chakra-ui/react'
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
