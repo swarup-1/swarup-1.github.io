@@ -26,7 +26,7 @@ export default function Navbar() {
     window.addEventListener("scroll",handleScroll)
   })
   const handleclick=()=>{
-    window.open('https://drive.google.com/file/d/1c9e3JeMGi_Lm-e_JjNd3ChNQyBGg7JZE/view?usp=share_link','_blank')
+    window.open('https://drive.google.com/file/d/1-xb19c2hazof8Ju1L6tPI-5CLm-Q6fWJ/view?usp=sharing','_blank')
   }
   
   return (
